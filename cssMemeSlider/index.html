@@ -12,20 +12,33 @@
 
 <body>
     <div class="wrapper">
+        <input type="radio" name="input-slider" id="slide1" checked>
+        <input type="radio" name="input-slider" id="slide2">
+        <input type="radio" name="input-slider" id="slide3">
+        <input type="radio" name="input-slider" id="slide4">
+
         <section class="slider">
-            <img class="slider-img" src="./assets/1.png" alt="Не готов к созвону">
-            <img class="slider-img" src="./assets/2.png" alt="Менторы в RS">
-            <img class="slider-img" src="./assets/3.png" alt="Ошибочный коммит">
-            <img class="slider-img" src="./assets/4.png" alt="Презентация">
+            <div class="slider-track">
+                <img class="slider-img" src="./assets/1.png" alt="Не готов к созвону">
+                <img class="slider-img" src="./assets/2.png" alt="Менторы в RS">
+                <img class="slider-img" src="./assets/3.png" alt="Ошибочный коммит">
+                <img class="slider-img" src="./assets/4.png" alt="Презентация">
+            </div>
         </section>
         <section class="footer">
-            <div class="image-text">Не готов к созвону</div>
-            <div class="slider-controls">
-                <div class="slider-control active"></div>
-                <div class="slider-control"></div>
-                <div class="slider-control"></div>
-                <div class="slider-control"></div>
+            <div class="image-text-slider">
+                <div class="image-text-item">Не готов к созвону</div>
+                <div class="image-text-item">готов к созвону</div>
+                <div class="image-text-item">Не готов созвону</div>
+                <div class="image-text-item">Не гок созвону</div>
             </div>
+            <div class="slider-controls">
+                <label for="slide1" class="slider-control active"></label>
+                <label for="slide2" class="slider-control"></label>
+                <label for="slide3" class="slider-control"></label>
+                <label for="slide4" class="slider-control"></label>
+            </div>
+
         </section>
     </div>
 </body>
