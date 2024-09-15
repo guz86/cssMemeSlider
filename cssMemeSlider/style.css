@@ -1,9 +1,73 @@
 html {
-    box-sizing: border-box;
-  }
-  
-  *,
-  *::after,
-  *::before {
-    box-sizing: inherit;
-  }
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #25282A;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+.wrapper {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin: 0 auto;
+}
+
+.slider {
+  display: flex;
+}
+
+.slider-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0rem;
+}
+
+.image-text {
+  text-align: center;
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+.slider-controls {
+  display: flex;
+  gap: 1em;
+}
+
+.slider-control {
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  background-color: #2563EB;
+  border: 0.1em solid #2563EB;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.slider-control:hover {
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+
+
+.slider-control.active {
+  background-color: transparent;
+}
+
+.slider-control.active:hover {
+  border-color: #2563EB;
+  border-color: #ffffff;
+}
